@@ -1,10 +1,11 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 // import { styles } from "../styles/style";
 import "../styles/style.css"
 import Advantages from "../components/Advantages";
 import TestimonialCarousel from "../components/Testimonials";
 import Faqs from "../components/Faqs";
+import Marquee from "../components/Marquee";
 
 const Home = () => {
   return (
@@ -20,6 +21,8 @@ const Home = () => {
           <Row>
           <Col xs={12} md={6}>
           <p className="homeParaText">we specialize in providing premium care and maintenance for luxury cars. Our expert technicians are trained to handle high-end vehicles with the utmost precision and attention to detail. Whether it's routine maintenance, intricate repairs, or performance enhancements, we ensure that your luxury car receives the finest service it deserves.</p>
+         
+         
           </Col> 
           </Row>
           </Container>
@@ -28,8 +31,8 @@ const Home = () => {
 
       <Container>
         <h2 className="text-center p-5">Why Choose Us</h2>
-        <Row>
-          <Col xs={12} md={4} lg={4} className="text-center">
+        <Row className="p-3">
+          <Col xs={12} md={4} lg={4} className="text-center p-3">
             <img
               src="https://static.vecteezy.com/system/resources/previews/035/511/694/non_2x/car-diagnostics-icon-illustration-vector.jpg"
               alt="car-diagnostics"
@@ -44,7 +47,7 @@ const Home = () => {
               minimizes downtime.
             </p>
           </Col>
-          <Col xs={12} md={4} lg={4} className="text-center">
+          <Col xs={12} md={4} lg={4} className="text-center p-3">
             <img
               src="https://cdn-icons-png.freepik.com/512/6342/6342791.png"
               alt="car-diagnostics"
@@ -59,7 +62,7 @@ const Home = () => {
               best possible care.
             </p>
           </Col>
-          <Col xs={12} md={4} lg={4} className="text-center">
+          <Col xs={12} md={4} lg={4} className="text-center p-3">
             <img
               src="https://t3.ftcdn.net/jpg/05/38/63/98/360_F_538639833_bzLDFDuegFpgHEiYPwf5QYWQgwsORvmv.jpg"
               alt="car-diagnostics"
@@ -73,7 +76,7 @@ const Home = () => {
               performed with meticulous attention to detail.
             </p>
           </Col>
-          <Col xs={12} md={4} lg={4} className="text-center p-2">
+          <Col xs={12} md={4} lg={4} className="text-center p-3">
             <img
               src="https://www.shutterstock.com/image-vector/wrench-gear-icon-service-tool-260nw-1928977187.jpg"
               alt="car-diagnostics"
@@ -87,7 +90,7 @@ const Home = () => {
               can handle even the most complex automotive problems.
             </p>
           </Col>
-          <Col xs={12} md={4} lg={4} className="text-center p-2">
+          <Col xs={12} md={4} lg={4} className="text-center p-3">
             <img
               src="https://static.vecteezy.com/system/resources/previews/013/695/803/non_2x/customer-satisfaction-icon-style-free-vector.jpg"
               alt="car-diagnostics"
@@ -101,7 +104,7 @@ const Home = () => {
               care.
             </p>
           </Col>
-          <Col xs={12} md={4} lg={4} className="text-center p-2">
+          <Col xs={12} md={4} lg={4} className="text-center p-3">
             <img
               src="https://static.thenounproject.com/png/2129678-200.png"
               alt="car-diagnostics"
@@ -113,12 +116,14 @@ const Home = () => {
               extended hours, including early mornings, late evenings, and
               Saturdays, to accommodate your busy schedule.
             </p>
+           
           </Col>
         </Row>
       </Container>
 
       <Advantages/>
       <TestimonialCarousel/>
+      <Marquee/>
       <Faqs/>
     </>
   );

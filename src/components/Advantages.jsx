@@ -28,15 +28,11 @@ const Advantages = () => {
         </Row>
       </Container>
       <Container>
-        <Row style={{ display: "flex" }}>
-          <Col xs={1} style={{ width: "40%" }}>
-            <img
-              src="https://png.pngtree.com/png-vector/20230131/ourmid/pngtree-red-wheel-vector-high-resolution-png-image_6578985.png"
-              style={{ height: "2rem", float: "right", marginTop: "3.4rem" }}
-            />
-          </Col>
-          <Col xs={11} style={{ width: "50%" }}>
-            <h2 className="pt-5 pb-5">Our Advantages</h2>
+        <Row >
+        
+       
+          <Col xs={11} >
+            <h2 className="p-5 text-danger text-center" >Our Advantages</h2>
           </Col>
         </Row>
 
@@ -77,7 +73,12 @@ const Advantages = () => {
       </Container>
       <Container>
         <Row>
-          <h2 className="text-center p-5">We Are At</h2>
+        <Row >
+      
+          <Col xs={11} >
+            <h2 className="p-5 text-danger text-center" >We Are At</h2>
+          </Col>
+        </Row>
           <Col className="text-center" xs={12} md={2} lg={3}>
             <img
               src="https://cdn-icons-png.freepik.com/512/5460/5460427.png"
@@ -104,7 +105,7 @@ const Advantages = () => {
           </Col>
           <Col className="text-center" xs={12} md={2} lg={3}>
             <img
-              src="https://cdn.pixabay.com/photo/2014/04/02/10/44/eye-304414_960_720.png"
+              src="https://cdn-icons-png.freepik.com/512/9539/9539840.png"
               className="serviceImage"
             />
             <br />

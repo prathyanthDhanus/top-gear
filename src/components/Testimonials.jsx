@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Carousel, Container, Row, Col } from "react-bootstrap";
+import HorizontalScroll from "./HorizontalScroll";
 
 
 const TestimonialCarousel = () => {
@@ -43,8 +44,11 @@ const TestimonialCarousel = () => {
 
   return (
     <>
-      <Container className="my-5">
+      <Container className="my-5 p-4">
+       
+
         <h2 className="text-center p-5">Customer Testimonials</h2>
+     
         <Carousel indicators={false} interval={3000}>
           {testimonials.map((testimonial, index) => (
             <Carousel.Item key={index}>
@@ -87,8 +91,11 @@ const TestimonialCarousel = () => {
         <h2>Rev Up Your Ride with Expert Care!</h2>
         <p>Where Quality Meets the Open Road. </p>
       </div>
-    </div>
+    </div>  
   </div>
+</Container>
+<Container className="pt-3">
+  <HorizontalScroll/>
 </Container>
     </>
   );

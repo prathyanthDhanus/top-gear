@@ -1,34 +1,16 @@
-import React from "react";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import React from 'react';
+import "../styles/style.css";
 
-const ReusableCard = ({
-  title,
-  text,
-  imgSrc,
-  alt,
-  buttonText,
-  buttonLink,
-  onClick,
-}) => {
+const FlipCard = ({ imageSrc, title, description }) => {
   return (
-    <Card
-      style={{
-        width: "18rem",
-        boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-        borderRadius: "20px",
-      }}
-    >
-      <Card.Img variant="top" src={imgSrc} alt={alt} />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>{text}</Card.Text>
-        <Button variant="primary" href={buttonLink} onClick={onClick}>
-          {buttonText}
-        </Button>
-      </Card.Body>
-    </Card>
+    <div className="card">
+    <img src={imageSrc} alt="Card image" className="card__image" />
+    <div className="card__content">
+      <p className="card__title">{title}</p>
+      <p className="card__description">{description}</p>
+    </div>
+  </div>
   );
 };
 
-export default ReusableCard;
+export default FlipCard;

@@ -10,6 +10,7 @@ function NavbarExample() {
     <Navbar expand="lg" style={{backgroundColor:"black"}}>
     <Container>
       <Navbar.Brand  style={{ color: "#fff",fontSize:"x-large" }}>
+        <img src="https://i.pinimg.com/736x/ae/38/01/ae38016bd1b7cd525f0bf6afe9bafac6.jpg"  style={{width:"3rem"}}/>
        Top-Gear
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
+
 
 const accordionContent = [
   {
@@ -28,62 +29,12 @@ const accordionContent = [
 const Faqs = () => {
   return (
     <>
-    <h2 className="text-center p-5">Brands We Serve</h2>
-      <Container>
-        <Row>
-          <Col>
-            {" "}
-            <img
-              src="https://www.carlogos.org/car-logos/honda-logo-2000-full-download.png "
-              alt="brand"
-               className="img-fluid"
-               style={{padding:"1rem"}}
-            />
-          </Col>
-          <Col>
-            {" "}
-            <img
-              src="https://i.pinimg.com/originals/9d/af/f8/9daff8341b698b79f82086d09699181c.png"
-              alt="brand"
-               className="img-fluid"
-            />
-          </Col>
-          <Col>
-            {" "}
-            <img
-              src="https://bcassetcdn.com/public/blog/wp-content/uploads/2023/07/21183222/emblem.jpg"
-              alt="brand"
-               className="img-fluid"
-               
-            />
-          </Col>
-          <Col>
-            {" "}
-            <img
-              src="https://www.carlogos.org/car-logos/toyota-logo-2005-download.png"
-              alt="brand"
-               className="img-fluid"
-               style={{padding:"2rem"}}
-            />
-          </Col>
-          <Col>
-            {" "}
-            <img
-              src="https://1000logos.net/wp-content/uploads/2018/02/BMW-Logo-1963.png"
-              alt="brand"
-               className="img-fluid"
-             
-            />
-          </Col>
-        </Row>
-      </Container>
-
     
         <div className="d-flex w-100" style={{ height: '80vh' }}>
+         
           <div style={{ backgroundColor: "black", width: "60%" }} className="equal-height">
-          <h4 style={{color:"white"}}>Get A Fair Quote Along With Free Doorstep Pick-up & Drop Facility</h4>
-          <p>Whether you’re the driver of your own car or a rental, you’re covered 24/7, 365 days a year</p>
-          <span>Request A Callback</span>
+          <h4 className="homeText p-5" >Get A Fair Quote Along With Free Doorstep Pick-up & Drop Facility</h4>
+         
           </div>
           <div style={{ width: "40%", overflow: "hidden" }} className="equal-height">
             <img
@@ -95,8 +46,8 @@ const Faqs = () => {
           </div>
         </div>
    
-        <h2 className="text-center p-4">Top-Gear FAQs</h2>
-      <Container >
+      <Container className="p-4">
+        <h2 className="text-center p-4 ">Top-Gear FAQs</h2>
         <Accordion defaultActiveKey="0" >
           {accordionContent.map((item, index) => (
             <Accordion.Item eventKey={index.toString()} key={index} >
