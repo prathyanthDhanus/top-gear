@@ -3,28 +3,15 @@ import CarouselComponent from "../re-usable-components/Carousel";
 import { Container, Row, Col } from "react-bootstrap";
 // import { styles } from "../styles/style";
 import "../styles/style.css";
+import { carouselmages } from "../data/Data";
 
-const images = [
-  {
-    src: "https://static.vecteezy.com/system/resources/previews/022/862/389/non_2x/sport-car-on-black-background-illustration-ai-generative-free-photo.jpg",
-    alt: "Image 1",
-  },
-  {
-    src: "https://w0.peakpx.com/wallpaper/442/308/HD-wallpaper-mclaren-p1-gtr-super-car-concept-mclaren-mclaren-p1-cars-concept-cars.jpg",
-    alt: "image2",
-  },
-  {
-    src: "https://www.teahub.io/photos/full/141-1413350_mclaren-f1-gtr-wallpaper-p1-gtr-mclaren-p1.png",
-    alt: "Image 3",
-  },
-];
 
 const Advantages = () => {
   return (
     <>
       <Container className="mt-5">
         <Row>
-          <CarouselComponent images={images} />
+          <CarouselComponent images={carouselmages} />
         </Row>
       </Container>
       <Container>

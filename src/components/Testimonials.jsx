@@ -3,44 +3,10 @@
 import React from "react";
 import { Carousel, Container, Row, Col } from "react-bootstrap";
 import HorizontalScroll from "./HorizontalScroll";
-
+import { testimonials } from "../data/Data";
 
 const TestimonialCarousel = () => {
-  const testimonials = [
-    {
-      name: "John Doe",
-      title: "CEO of Company",
-      text: [
-        `🔻Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-        " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-        "  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      ],
-      image:
-        "https://static.vecteezy.com/system/resources/previews/012/941/847/original/illustration-of-avatar-girl-nice-smiling-woman-with-black-hair-flat-icon-on-purple-background-vector.jpg",
-    },
-    {
-      name: "Jane Smith",
-      title: "CTO of Another Company",
-      text: [
-        "🔻Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Leo a diam sollicitudin tempor.",
-        "Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Leo a diam sollicitudin tempor.",
-      ],
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ1oLaDJlC-DvPibHvUAluSld6D4KG_Q00x6oMDubpL3K5lLeqWeKn8eUgbQ3ZiWjg6HM&usqp=CAU",
-    },
-    {
-      name: "Alice Johnson",
-      title: "Manager at Some Company",
-      text: [
-        "🔻Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Leo a diam sollicitudin tempor.",
-        "Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Leo a diam sollicitudin tempor.",
-      ],
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcTlHOIDT1fFfYhabUc7o-Pc08bqihLYc5XDKW-xRGFlUQJDs-rDs-IDKKxB1tl_m1wPY&usqp=CAU",
-    },
-  ];
+
 
   return (
     <>

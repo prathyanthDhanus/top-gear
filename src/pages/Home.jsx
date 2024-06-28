@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-// import { styles } from "../styles/style";
 import "../styles/style.css"
 import Advantages from "../components/Advantages";
 import TestimonialCarousel from "../components/Testimonials";
