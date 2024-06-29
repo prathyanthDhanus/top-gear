@@ -4,8 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white py-4" >
-      <Container>
+    <div className='pt-5'>
+
+
+    <footer className="bg-dark text-white py-4 " >
+      <Container >
         <Row>
           <Col md={4}>
             <h5>Top Gear Workshop</h5>
@@ -38,6 +41,7 @@ const Footer = () => {
         </Row>
       </Container>
     </footer>
+    </div>
   );
 };
 

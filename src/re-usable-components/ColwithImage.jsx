@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const ColwithImage = ({ title, text, imageUrl }) => {
   return (
     <Container>
-      <h1 className="text-center">{title}</h1>
+      <h1 className="text-center text-danger">{title}</h1>
       <Row >
         <Col className="pt-5" xs={12} sm={6} md={12} lg={8} xl={6} >
           <p>{text}</p>

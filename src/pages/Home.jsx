@@ -29,7 +29,7 @@ const Home = () => {
       </div>
 
       <Container>
-        <h2 className="text-center p-5">Why Choose Us</h2>
+        <h2 className="text-center text-danger p-5">Why Choose Us</h2>
         <Row className="p-3">
           <Col xs={12} md={4} lg={4} className="text-center p-3">
             <img

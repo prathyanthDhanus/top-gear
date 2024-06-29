@@ -11,6 +11,7 @@ const HorizontalScroll = () => {
 
   return (
     <Container>
+        <h2 className="text-center text-danger p-5">Our Specialities</h2>
       <HScroll data={hScrollData}/>
     </Container>
   );

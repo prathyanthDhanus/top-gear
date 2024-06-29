@@ -158,7 +158,7 @@ export const hScrollData = [
     },
    
     {
-      imageSrc: "https://denttime.com/wp-content/uploads/2022/03/9215C768-55D9-4B4D-BDE8-29352DF098CE-min.jpeg",
+      imageSrc: "https://i.shgcdn.com/97cbf161-3187-4d4d-aef9-78c699559d8f/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
       title: `Car Polish`,
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ", 
       alt:"phone",

@@ -24,7 +24,7 @@ const Faqs = () => {
         </div>
    
       <Container className="p-4">
-        <h2 className="text-center p-4 ">Top-Gear FAQs</h2>
+        <h2 className="text-center text-danger p-4 ">Top-Gear FAQs</h2>
         <Accordion defaultActiveKey="0" >
           {accordionContent.map((item, index) => (
             <Accordion.Item eventKey={index.toString()} key={index} >

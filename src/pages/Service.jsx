@@ -14,7 +14,7 @@ const Services = () => {
         imageUrl="https://www.shutterstock.com/image-photo/car-service-technologycustomer-satisfaction-guarantee-600nw-2271159941.jpg"
       />
       <Container>
-        <h1 className="text-center ">Services Offered</h1>
+        <h1 className="text-center text-danger ">Services Offered</h1>
 
         <Row>
           {serviceCardData.map((card, index) => (
@@ -31,7 +31,7 @@ const Services = () => {
         </Row>
       </Container>
       <Container>
-        <h1 className="text-center ">Detailed Service Descriptions</h1>
+        <h1 className="text-center text-danger">Detailed Service Descriptions</h1>
         <ColwithImage
           text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,"
           imageUrl="https://media.istockphoto.com/id/1635077149/vector/concept-of-effectiveness-efficiency-or-productivity-for-better-results-improve-performance.jpg?s=612x612&w=0&k=20&c=NfQbaqWW-fErvNKi08Ophe5fJRrsC3xGdz81WC-F3mY="
@@ -70,7 +70,7 @@ const Services = () => {
       </Container>
 
       <Container className="p-5">
-      <h1 className="text-center p-3 ">Service Feedbacks</h1>
+      <h1 className="text-center text-danger p-3 ">Service Feedbacks</h1>
         <Row>
           <Col>
           <p>

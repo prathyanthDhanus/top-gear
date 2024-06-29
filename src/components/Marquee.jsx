@@ -5,7 +5,7 @@ import { Container,Row,Col } from 'react-bootstrap';
 const Marquee = () => {
   return (
     <div>
-      <h2 className="text-center p-5">Brands We Serve</h2>
+      <h2 className="text-center text-danger p-5">Brands We Serve</h2>
     <Container className="my-5" style={{ overflow: 'hidden' }}>
       <Row className="marquee-container"> 
         <Col xs={8} md={2} lg={2}>
