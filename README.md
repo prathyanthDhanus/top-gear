@@ -14,7 +14,7 @@ Our car workshop website, built using React and React Bootstrap, offers a seamle
   - [Installation](#installation)
 - [Folder Structure](#folder-structure)
 - [Technologies Used](#technologies-used)
-
+- [Screenshots](#screenshots)
 
 ## Getting Started
 
@@ -59,3 +59,6 @@ Run the client:
   - Font awasome for icons
   - AOS library for animation
 
+## Screenshots
+
+![Home Page](https://res.cloudinary.com/due7btgno/image/upload/v1719684689/Screenshot_2024-06-29_233840_qbtiep.png)
