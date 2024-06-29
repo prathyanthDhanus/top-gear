@@ -7,7 +7,7 @@ const TestimonialCarousel = () => {
     <>
       {/* =================!!!!!!!!! testmonials section !!!!!!!!!================== */}
       <Container className="my-5 p-4">
-        <h2 className="text-center text-danger p-5">Customer Testimonials</h2>
+        <h1 className="text-center text-danger p-5">Customer Testimonials</h1>
         {/* !!!!!!!!!! carousel section !!!!!!!!! */}
         <Carousel indicators={false} interval={3000}>
           {testimonials.map((testimonial, index) => (

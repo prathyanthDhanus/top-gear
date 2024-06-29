@@ -25,7 +25,7 @@ const Advantages = () => {
         <Row >
        
           <Col xs={11} >
-            <h2 className="p-5 text-danger text-center" >Our Advantages</h2>
+            <h1 className="p-5 text-danger text-center" >Our Advantages</h1>
           </Col>
         </Row>
           {/* !!!!!!!!!! card row !!!!!!!!! */}
@@ -74,7 +74,7 @@ const Advantages = () => {
         <Row >
       
           <Col xs={11} >
-            <h2 className="p-5 text-danger text-center" >We Are At</h2>
+            <h1 className="p-5 text-danger text-center" >We Are At</h1>
           </Col>
         </Row>
           <Col className="text-center" xs={12} md={2} lg={3}>

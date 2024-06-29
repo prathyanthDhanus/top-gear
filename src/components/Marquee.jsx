@@ -6,7 +6,7 @@ const Marquee = () => {
   return (
     // =============!!!!!!!!! marquee component !!!!!!!!!!===============
     <div>
-      <h2 className="text-center text-danger p-5">Brands We Serve</h2>
+      <h1 className="text-center text-danger p-5">Brands We Serve</h1>
       <Container className="my-5" style={{ overflow: "hidden" }}>
         <Row className="marquee-container">
           {/* !!!!!!!!!! honda icon !!!!!!!!! */}
