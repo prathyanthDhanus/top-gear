@@ -61,4 +61,4 @@ Run the client:
 
 ## Screenshots
 
-![Home Page](https://res.cloudinary.com/due7btgno/image/upload/v1719684689/Screenshot_2024-06-29_233840_qbtiep.png)
+![Home Page](https://res.cloudinary.com/due7btgno/image/upload/v1719685001/Screenshot_2024-06-29_233840_byqpp8.png)
