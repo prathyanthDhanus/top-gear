@@ -9,10 +9,12 @@ import ContactForm from "../components/Contactform";
 
 const Contactus = () => {
   return (
-    <div>
+    <>
+      {/* =====================!!!!!!!!! contact info section !!!!!!!!===================== */}
       <Container className="my-5" style={{ overflow: "hidden" }}>
         <h1 className="text-center text-danger p-5">Contact Us</h1>
         <Row className="justify-content-end">
+          {/* !!!!!!!!!! contact info !!!!!!!!! */}
           <Col xs={12} md={8} lg={8} className="order-md-2 p-4">
             <h3>Contact Info</h3>
             <p>
@@ -28,6 +30,9 @@ const Contactus = () => {
               Lorem Ipsum.
             </p>
           </Col>
+          {/* !!!!!!!!!! contact info end !!!!!!!!! */}
+
+          {/* !!!!!!!!!! car gif video section !!!!!!!!! */}
           <Col xs={12} md={3} lg={3} className="order-md-2 mb-4">
             <img
               src="https://i.pinimg.com/originals/4c/5c/9d/4c5c9dbb7d822b280e434bbe95abfa62.gif"
@@ -35,42 +40,74 @@ const Contactus = () => {
               className="img-fluid marquee-item"
             />
           </Col>
+          {/* !!!!!!!!!! car gif video end !!!!!!!!! */}
         </Row>
         <Row>
-          <Col xs={12} md={4} lg={4} className="mb-4">
+          {/* !!!!!!!!!! phone section !!!!!!!!! */}
+          <Col
+            xs={12}
+            md={4}
+            lg={4}
+            className="mb-4"
+            data-aos="fade-down-right"
+          >
             <div className="phone-number-container">
               <FontAwesomeIcon icon={faPhoneAlt} className="phone-icon" />
               <span className="phone-number">+123 456 7890</span>
             </div>
           </Col>
-          <Col xs={12} md={4} lg={4} className="mb-4">
+          {/* !!!!!!!!!! phone section end !!!!!!!!! */}
+
+          {/* !!!!!!!!!! instagram section !!!!!!!!! */}
+          <Col
+            xs={12}
+            md={4}
+            lg={4}
+            className="mb-4"
+            data-aos="fade-down-right"
+          >
             <div className="phone-number-container">
               <FontAwesomeIcon icon={faInstagram} className="phone-icon" />
               <span className="phone-number">top_gear</span>
             </div>
           </Col>
-          <Col xs={12} md={4} lg={4} className="mb-4">
+          {/* !!!!!!!!!! instagram section end !!!!!!!!! */}
+
+          {/* !!!!!!!!!! google section !!!!!!!!! */}
+          <Col
+            xs={12}
+            md={4}
+            lg={4}
+            className="mb-4"
+            data-aos="fade-down-right"
+          >
             <div className="phone-number-container">
               <FontAwesomeIcon icon={faGoogle} className="phone-icon" />
               <span className="phone-number">www.top_gear.com</span>
             </div>
           </Col>
+          {/* !!!!!!!!!! google section end !!!!!!!!! */}
         </Row>
       </Container>
-
+      {/* =================!!!!!!!!! contact form section !!!!!!!!!================= */}
       <Container>
         <Row>
           <Col xs={12} md={6} lg={6}>
+            {/* !!!!!!!!!! contact form !!!!!!!!! */}
             <ContactForm />
           </Col>
-          <Col  xs={12} md={6} lg={6}>
-          <img src="https://st3.depositphotos.com/1743476/32186/i/450/depositphotos_321868246-stock-photo-young-latin-woman-in-customer.jpg" alt="call"
-           className="img-fluid" 
-          />
+          <Col xs={12} md={6} lg={6}>
+            {/* !!!!!!!!!! contact form image !!!!!!!!! */}
+            <img
+              src="https://st3.depositphotos.com/1743476/32186/i/450/depositphotos_321868246-stock-photo-young-latin-woman-in-customer.jpg"
+              alt="call"
+              className="img-fluid"
+            />
           </Col>
         </Row>
       </Container>
-    </div>
+      {/* =================!!!!!!!!! contact form section end !!!!!!!!!================= */}
+    </>
   );
 };
 

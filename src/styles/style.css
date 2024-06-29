@@ -243,7 +243,7 @@
 
 /* ===============!!!!!!!!!!! card style  end !!!!!!!!!!================== */
 
-/* ===============!!!!!!!!!!! loader style  end !!!!!!!!!!================== */
+/* ===============!!!!!!!!!!! loader style !!!!!!!!!!================== */
 
 .loader {
   width: fit-content;
@@ -348,6 +348,8 @@
 
 /* ===============!!!!!!!!!!! loader style  end !!!!!!!!!!================== */
 
+/* ===============!!!!!!!!!!! contact page button style !!!!!!!!!!================== */
+
 .phone-number-container {
   display: flex;
   align-items: center;
@@ -365,3 +367,5 @@
   margin-right: 0.5rem;
   font-size: 1.5rem;
 }
+
+/* ===============!!!!!!!!!!! contact page button style end !!!!!!!!!!================== */

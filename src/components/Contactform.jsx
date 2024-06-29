@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { Form, Button, Container ,Col} from 'react-bootstrap';
 
 const ContactForm = () => {
+    
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
 
+  //taking values from input box
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -15,14 +17,17 @@ const ContactForm = () => {
       [name]: value
     });
   };
+  //=========!!! form submit function !!!=========
 
+  //=========!!! form submit function !!!=========
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission (e.g., send data to server)
-    console.log('Form submitted:', formData);
-    // Clear form after submission
-    setFormData({ name: '', email: '', message: '' });
-  };
+      e.preventDefault();
+      // Handle form submission (e.g., send data to server)
+      console.log('Form submitted:', formData);
+      // Clear form after submission
+      setFormData({ name: '', email: '', message: '' });
+    };
+    //=========!!! form submit function end !!!=========
 
   return (
     <Container className="mt-5">

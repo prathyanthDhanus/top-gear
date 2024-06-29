@@ -12,7 +12,7 @@ const CarouselComponent = ({ images }) => {
               width: '100%',
               height: '400px', // adjust the height to your liking
               objectFit: 'fill',
-              borderRadius: '10px', // add some rounded corners
+              borderRadius: '10px', 
             }}
           />
        

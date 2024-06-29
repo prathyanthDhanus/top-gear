@@ -3,25 +3,32 @@ import CarouselComponent from "../re-usable-components/Carousel";
 import { Container, Row, Col } from "react-bootstrap";
 import "../styles/style.css";
 import { carouselmages } from "../data/Data";
-
+import useAOS from "../custom-hooks/Aos";
 
 const Advantages = () => {
+   
+  useAOS({ duration: 1000 });
+
   return (
     <>
+    {/* ===============!!!!!!!!!! carousel component !!!!!!!!!!============== */}
       <Container className="mt-5">
         <Row>
+           {/* !!!!!!!!!! carousel component !!!!!!!!! */}
           <CarouselComponent images={carouselmages} />
         </Row>
       </Container>
+    {/* ===============!!!!!!!!!! carousel component end !!!!!!!!!!============== */}
+
+    {/* ===============!!!!!!!!!! our advantages card section !!!!!!!!!!============== */}
       <Container>
         <Row >
-        
        
           <Col xs={11} >
             <h2 className="p-5 text-danger text-center" >Our Advantages</h2>
           </Col>
         </Row>
-
+          {/* !!!!!!!!!! card row !!!!!!!!! */}
         <Row>
           <Col xs={12} md={6} lg={3} className="text-center">
             <img
@@ -57,7 +64,11 @@ const Advantages = () => {
             <p>Quality Works</p>
           </Col>
         </Row>
+         {/* !!!!!!!!!! card row end !!!!!!!!! */}
       </Container>
+      {/* ============!!!!!!!!!! our advantages card section end !!!!!!!!!============= */}
+      
+      {/* ============!!!!!!!!!! we are at section !!!!!!!!!============= */}
       <Container>
         <Row>
         <Row >
@@ -72,7 +83,7 @@ const Advantages = () => {
               className="serviceImage"
             />
             <br />
-            <Col xs={12} md={4} lg={6} className="mb-4">
+            <Col xs={12} md={4} lg={6} className="mb-4" data-aos="zoom-in-up">
             <div className="phone-number-container">
              
               <span className="phone-number ">35480 Customers</span>
@@ -85,7 +96,7 @@ const Advantages = () => {
               className="serviceImage"
             />
             <br />
-            <Col xs={12} md={4} lg={6} className="mb-4">
+            <Col xs={12} md={4} lg={6} className="mb-4" data-aos="zoom-in-up">
             <div className="phone-number-container">
              
               <span className="phone-number "> 3913 Workers</span>
@@ -98,7 +109,7 @@ const Advantages = () => {
               className="serviceImage"
             />
             <br />
-            <Col xs={12} md={4} lg={6} className="mb-4">
+            <Col xs={12} md={4} lg={6} className="mb-4" data-aos="zoom-in-up">
             <div className="phone-number-container">
              
               <span className="phone-number ">9 Years Of Experience</span>
@@ -111,7 +122,7 @@ const Advantages = () => {
               className="serviceImage"
             />
             <br />
-            <Col xs={12} md={4} lg={6} className="mb-4">
+            <Col xs={12} md={4} lg={6} className="mb-4" data-aos="zoom-in-up">
             <div className="phone-number-container">
              
               <span className="phone-number ">12 Branches</span>
@@ -120,6 +131,7 @@ const Advantages = () => {
           </Col>
         </Row>
       </Container>
+      {/* ================!!!!!!! we are at section end !!!!!!!!!=================== */}
     </>
   );
 };

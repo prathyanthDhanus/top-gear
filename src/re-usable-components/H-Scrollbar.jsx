@@ -1,11 +1,17 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import "../styles/style.css";
+import useAOS from "../custom-hooks/Aos";
+
+// Horizontal scroll component with AOS animation and horizontal scroll functionality
 
 const HScroll = ({ data }) => {
+  useAOS({ duration: 1000 });
+
   const scrollContainerRef = useRef(null);
   const [isHorizontalScrolling, setIsHorizontalScrolling] = useState(false);
 
+  // Handle horizontal scroll on mouse wheel event
   useEffect(() => {
     const handleWheel = (event) => {
       if (scrollContainerRef.current) {
@@ -14,6 +20,7 @@ const HScroll = ({ data }) => {
       }
     };
 
+    // Handle scroll event to disable vertical scrolling at the end of horizontal scroll
     const handleScroll = () => {
       if (scrollContainerRef.current) {
         const maxScrollLeft =
@@ -25,10 +32,12 @@ const HScroll = ({ data }) => {
       }
     };
 
+    // Add event listeners to the scroll container
     const scrollContainer = scrollContainerRef.current;
     scrollContainer.addEventListener("wheel", handleWheel);
     scrollContainer.addEventListener("scroll", handleScroll);
 
+    // Clean up event listeners on component unmount
     return () => {
       scrollContainer.removeEventListener("wheel", handleWheel);
       scrollContainer.removeEventListener("scroll", handleScroll);
@@ -44,7 +53,7 @@ const HScroll = ({ data }) => {
     >
       <div className="d-flex horizontal-scroll-content">
         {data.map((item, index) => (
-          <div key={index} className="image-container">
+          <div key={index} className="image-container" data-aos="flip-left">
             <img
               src={item.imgSrc}
               alt={`Example ${index + 1}`}

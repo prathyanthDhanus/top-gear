@@ -6,10 +6,10 @@ const ColwithImage = ({ title, text, imageUrl }) => {
     <Container>
       <h1 className="text-center text-danger">{title}</h1>
       <Row >
-        <Col className="pt-5" xs={12} sm={6} md={12} lg={8} xl={6} >
+        <Col className="pt-5" xs={12} sm={6} md={6} lg={6} xl={6} >
           <p>{text}</p>
         </Col>
-        <Col className="text-center p-5" xs={12} md={6}>
+        <Col className="text-center p-5" xs={12} md={6} lg={4} xl={6} >
           <img
             src={imageUrl}
             alt="service"

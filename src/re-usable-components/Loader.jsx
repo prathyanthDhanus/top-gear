@@ -1,8 +1,12 @@
 import React from 'react';
 import "../styles/style.css";
+import { Container } from 'react-bootstrap';
 
 const Loader = () => {
   return (
+    <Container style={{marginTop:"25rem" ,paddingLeft:"8rem"}} >
+
+  
     <div className="loader">
       <div className="truckWrapper">
         <div className="truckBody">
@@ -132,6 +136,7 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
         </svg>
       </div>
     </div>
+    </Container>
   );
 };
 
